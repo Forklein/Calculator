@@ -22,10 +22,15 @@ while gang == True:
      pause('Premi un tasto per terminare')
      break
  elif op == '/':
-     print('Il risultato è: ', end ='')
-     print(numero/numeroo)
-     pause('Premi un tasto per terminare')
-     break
+     if numeroo == 0:
+             print('Errore, un numero non è divisibile per zero')
+             pause('Premi un tasto per terminare')
+             break
+     else:
+         print('Il risultato è: ', end ='')
+         print(numero/numeroo)
+         pause('Premi un tasto per terminare')
+         break
  else:
      print('Hai inserito un operatore non corretto, riprova!')
      continue
